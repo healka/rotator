@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо встраиваемого 360° просмотрщика</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .demo-section {
+            margin-bottom: 50px;
+        }
+
+        .demo-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .viewer-container {
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+            padding: 20px;
+            background: #fafafa;
+        }
+
+        .viewer-container h3 {
+            margin: 0 0 15px 0;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .code-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .code-section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        pre {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        .instructions {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .instructions h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .demo-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .viewer-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 Встраиваемый 360° просмотрщик изображений</h1>
+
+        <div class="instructions">
+            <h3>Как использовать:</h3>
+            <ol>
+                <li>Подключите JavaScript файл: <code>&lt;script src="https://your-cdn.com/image360-viewer.js"&gt;&lt;/script&gt;</code></li>
+                <li>Создайте JSON файл с конфигурацией изображений</li>
+                <li>Добавьте элемент с атрибутом <code>data-image360-viewer</code></li>
+                <li>Укажите путь к JSON файлу в атрибуте <code>data-config</code></li>
+            </ol>
+        </div>
+
+        <div class="demo-section">
+            <h2>Демонстрация</h2>
+            
+            <div class="demo-grid">
+                <div class="viewer-container">
+                    <h3>Первый набор изображений</h3>
+                    <!-- Встраиваемый 360° просмотрщик -->
+                    <div data-image360-viewer data-config="images.json"></div>
+                </div>
+
+                <div class="viewer-container">
+                    <h3>Второй набор изображений</h3>
+                    <!-- Второй встраиваемый 360° просмотрщик -->
+                    <div data-image360-viewer data-config="images1.json"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>Возможности</h2>
+            <ul class="feature-list">
+                <li>Перетаскивание мышью для поворота изображения</li>
+                <li>Поддержка touch-событий для мобильных устройств</li>
+                <li>Инерция при быстром движении</li>
+                <li>Полноэкранный режим</li>
+                <li>Клавиатурные сокращения (стрелки, F для полного экрана)</li>
+                <li>Автоматическая предзагрузка изображений</li>
+                <li>Адаптивный дизайн</li>
+                <li>Легкое встраивание на любой сайт</li>
+            </ul>
+        </div>
+
+        <div class="code-section">
+            <h3>HTML код для встраивания:</h3>
+            <pre><code>&lt;!-- Подключение скрипта --&gt;
+&lt;script src="https://your-github-pages.com/image360-viewer.js"&gt;&lt;/script&gt;
+
+&lt;!-- Простое встраивание --&gt;
+&lt;div data-image360-viewer data-config="images.json"&gt;&lt;/div&gt;
+
+&lt;!-- Встраивание с другим конфигом --&gt;
+&lt;div data-image360-viewer data-config="another-config.json"&gt;&lt;/div&gt;</code></pre>
+        </div>
+
+        <div class="code-section">
+            <h3>Пример JSON конфигурации (images.json):</h3>
+            <pre><code>{
+  "baseUrl": "https://raw.githubusercontent.com/username/repo/main",
+  "images": [
+    "images/01.jpg",
+    "images/02.jpg",
+    "images/03.jpg",
+    "images/04.jpg",
+    "images/05.jpg"
+  ]
+}</code></pre>
+        </div>
+
+        <div class="code-section">
+            <h3>Программная инициализация:</h3>
+            <pre><code>// Автоматическая инициализация всех элементов
+initImage360Viewers();
+
+// Ручная инициализация конкретного элемента
+const container = document.getElementById('my-viewer');
+const viewer = new Image360Viewer(container, 'path/to/config.json');</code></pre>
+        </div>
+
+        <div class="instructions">
+            <h3>Для размещения на GitHub:</h3>
+            <ol>
+                <li>Загрузите <code>image360-viewer.js</code> и JSON файлы в репозиторий</li>
+                <li>Включите GitHub Pages в настройках репозитория</li>
+                <li>Используйте URL вида: <code>https://username.github.io/repo-name/image360-viewer.js</code></li>
+                <li>В JSON файле укажите <code>baseUrl</code> как <code>https://raw.githubusercontent.com/username/repo/main</code></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Подключение встраиваемого скрипта -->
+    <script src="image360-viewer.js"></script>
+</body>
+</html>
+
