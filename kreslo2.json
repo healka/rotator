@@ -1,44 +1,44 @@
 { 
   "baseUrl": "https://raw.githubusercontent.com/healka/rotator/refs/heads/main", 
   "images": [ 
-    "kreslo2/01.jpg" 
-    "kreslo2/02.jpg" 
-    "kreslo2/03.jpg" 
-    "kreslo2/04.jpg" 
-    "kreslo2/05.jpg" 
-    "kreslo2/06.jpg" 
-    "kreslo2/07.jpg" 
-    "kreslo2/08.jpg" 
-    "kreslo2/09.jpg" 
-    "kreslo2/10.jpg" 
-    "kreslo2/11.jpg" 
-    "kreslo2/12.jpg" 
-    "kreslo2/13.jpg" 
-    "kreslo2/14.jpg" 
-    "kreslo2/15.jpg" 
-    "kreslo2/16.jpg" 
-    "kreslo2/17.jpg" 
-    "kreslo2/18.jpg" 
-    "kreslo2/19.jpg" 
-    "kreslo2/20.jpg" 
-    "kreslo2/21.jpg" 
-    "kreslo2/22.jpg" 
-    "kreslo2/23.jpg" 
-    "kreslo2/24.jpg" 
-    "kreslo2/25.jpg" 
-    "kreslo2/26.jpg" 
-    "kreslo2/27.jpg" 
-    "kreslo2/28.jpg" 
-    "kreslo2/29.jpg" 
-    "kreslo2/30.jpg" 
-    "kreslo2/31.jpg" 
-    "kreslo2/32.jpg" 
-    "kreslo2/33.jpg" 
-    "kreslo2/34.jpg" 
-    "kreslo2/35.jpg" 
-    "kreslo2/36.jpg" 
-    "kreslo2/37.jpg" 
-    "kreslo2/38.jpg" 
-    "kreslo2/39.jpg" 
+    "kreslo2/01.jpg" ,
+    "kreslo2/02.jpg" ,
+    "kreslo2/03.jpg" ,
+    "kreslo2/04.jpg" ,
+    "kreslo2/05.jpg" ,
+    "kreslo2/06.jpg" ,
+    "kreslo2/07.jpg" ,
+    "kreslo2/08.jpg" ,
+    "kreslo2/09.jpg" ,
+    "kreslo2/10.jpg" ,
+    "kreslo2/11.jpg" ,
+    "kreslo2/12.jpg" ,
+    "kreslo2/13.jpg" ,
+    "kreslo2/14.jpg" ,
+    "kreslo2/15.jpg" ,
+    "kreslo2/16.jpg" ,
+    "kreslo2/17.jpg" ,
+    "kreslo2/18.jpg" ,
+    "kreslo2/19.jpg" ,
+    "kreslo2/20.jpg" ,
+    "kreslo2/21.jpg" ,
+    "kreslo2/22.jpg" ,
+    "kreslo2/23.jpg" ,
+    "kreslo2/24.jpg" ,
+    "kreslo2/25.jpg" ,
+    "kreslo2/26.jpg" ,
+    "kreslo2/27.jpg" ,
+    "kreslo2/28.jpg" ,
+    "kreslo2/29.jpg" ,
+    "kreslo2/30.jpg" ,
+    "kreslo2/31.jpg" ,
+    "kreslo2/32.jpg" ,
+    "kreslo2/33.jpg" ,
+    "kreslo2/34.jpg" ,
+    "kreslo2/35.jpg" ,
+    "kreslo2/36.jpg" ,
+    "kreslo2/37.jpg" ,
+    "kreslo2/38.jpg" ,
+    "kreslo2/39.jpg"
   ] 
 } 
